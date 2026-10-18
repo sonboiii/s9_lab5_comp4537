@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <script src="./lang/en/messages.js" defer></script>
+    <script src="./client.js" defer></script>
+</head>
+<body data-api="http://localhost:3000/lab5/api/v1">
+    <h1 data-message="PAGE_TITLE"></h1>
+    <button id="insert" type="button" data-message="INSERT_PATIENTS"></button>
+    <form id="query-form">
+        <p><label for="sql" data-message="SQL_QUERY"></label></p>
+        <textarea id="sql" rows="5" cols="60"></textarea>
+        <p><button type="submit" data-message="SUBMIT_QUERY"></button></p>
+    </form>
+    <pre id="response" aria-live="polite"></pre>
+</body>
+</html>

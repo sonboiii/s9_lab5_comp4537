@@ -1,0 +1,22 @@
+{
+  "name": "server2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server2/server_2.js",
+    "dev": "node --env-file=.env server2/server_2.js",
+    "local": "concurrently --kill-others --names server1,server2 \"node server1/server.js\" \"node --env-file-if-exists=.env server2/server_2.js\"",
+    "remote": "concurrently --kill-others --names server1,server2 \"node server1/server.js\" \"node --env-file=.env server2/server_2.js --remote\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "pg": "^8.23.1"
+  },
+  "devDependencies": {
+    "concurrently": "^10.0.6"
+  }
+}
