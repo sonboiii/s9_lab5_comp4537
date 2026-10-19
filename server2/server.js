@@ -1,3 +1,4 @@
+// chatgpt assisted
 const http = require("http");
 const MESSAGES = require("./lang/en/messages");
 const Database = require("./db");
